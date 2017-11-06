@@ -7,3 +7,8 @@ Quando si inizializza un repository viene creata la cartella nascosta .git, visi
 How is the staging area different from the working directory and the repository? What value do you think it offers?
 
 La staging area contiene i files che necessitano di un commit, è un'area di parcheggio temporaneo dei files tra working directory e repository. Tramite il comando git add è possibile parcheggiare in staging area i files, uno per volta, per poi fare archiviarli tutti con un solo commit nel repository. E' utile in quanto permette di organizzare meglio i commit. Tramite il comando git status è possibile verificare quali files sono presenti nella staging area. 
+
+13. Reflect: Commit Size
+How can you use the staging area to make sure you have one commit per logical change?
+
+Bisogna aggiungere all'area di staging un file alla volta e poi tramite un unico comando di commit vengono aggiornati nel repository tutti i files relativi ad uno stesso intervento logico. 
