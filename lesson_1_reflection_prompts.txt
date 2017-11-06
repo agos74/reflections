@@ -1,0 +1,37 @@
+6. Reflect: Using diff to Find Bugs
+How did viewing a diff between two versions of a file help you see the bug that was introduced?
+
+Questa è stata una lezione molto interessante su come la differenza tra due file può aiutarti a trovare i bug nel codice. Usando diff su linux in pochi secondi vedi la differenza fra due file. 
+
+8. Reflect: Using History for Efficiency
+How could having easy access to the entire history of a file make you a more efficient programmer in the long term?
+
+Avere accesso a tutta la storia di un file indubbiamente permette al programmatore di essere più efficiente, perchè se c'è un bug che si manifesta in seguito ad una modifica, si può verificare quando il bug non si manifestava ripristinando una vecchia versione del file e quindi vedere in seguito a quale errata modifica il bug è stato introdotto.
+
+15. Reflect: Manual Commits
+What do you think are the pros and cons of manually choosing when to create a commit, like you do in Git, vs having versions automatically saved, like Google Docs does?
+
+I vantaggi che ci sono nel creare manualmente il commit sono che c'è una spiegazione logica di quando farli. Gli svantaggi sono che se si scrive troppo codice prima di creare un commit potrebbero essere state apportate troppe modifiche per poter poi essere utile nel trovare eventuali bug. Invece il sistema di versionamento automatico, come Google Docs, ha il vantaggio che se si modifica raramente un documento è molto utile, se invece si fanno spesso modifiche risulta dispendioso di risorse e poco utile.
+
+18. Reflect: Multi-File Commits
+Why do you think some version control systems, like Git, allow saving multiple files in one commit, while others, like Google Docs, treat each file separately?
+
+Salvare file multipli tutti in un commit ha sicuramente dei vantaggi se si modificano per uno stesso motivo files di un progetto, che sono nella maggior parte dei casi correlati, ad esempio una nuova funzione la cui implementazione richiede la modifica di più files. Nel caso che i files vengono trattati singolarmente, come Google Docs, può essere utile solo se i files non sono correlati fra di loro, quindi per la programmazione è una caratteristica che serve ben poco. 
+
+22. Reflect: Using Git to View History
+How can you use the commands git log and git diff to view the history of files?
+
+Usando git log dentro la cartella del repository, si può vedere la lista dei commit in ordine cronologico, con i relativi ID utili per vedere le differenze tra i vari commit tramite il comando git diff. Se ad esempio si vuole vedere la differenza tra commit-1 e commit-2 si scrive git diff ID-commit-1 ID-commit-2.
+
+26. Reflect: Confidence from Version Control
+How might using version control make you more confident to make changes that could break something?
+
+Tramite il comando git checkout è possibile tornare ad una versione precedente, tramite l'id del commit ricavabile con il comando git log. Questo consente di avere più sicurezza durante le modifiche poichè se si rompe qualcosa si può tranquillamente ripristinare una versione precedente e eventualmente trovare dove si è generato il bug che ha rotto tutto.
+
+31. Reflect: How Do You Want to Use Git?
+Now that you have your workspace set up, what do you want to try using Git for?
+
+Adesso voglio provare ad usare Git per i miei progetti. Penso che sia molto utile e potrà darmi una grossa mano nella gestione di grossi progetti.
+
+
+
