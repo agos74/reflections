@@ -17,3 +17,11 @@ Bisogna aggiungere all'area di staging un file alla volta e poi tramite un unico
 What are some situations when branches would be helpful in keeping your history organized? How would branches help?
 
 Poter creare branches in un programma aiuta in diverse situazioni. Ad esempio se si vuole fare una modifica importante al programma, come ad esempio introdurre una nuova funzione che richiede del tempo per essere realizzata. Nel frattempo, se viene segnalato un bug al programma, rimane possibile correggerlo nel branch master, e continuare tranquillamente le nuove implementazioni nel branch secondario. 
+
+21. Reflect: Visualizing with Diagrams
+How do the diagrams help you visualize the branch structure?
+
+I diagrammi consentono di capire quali sono i commit non raggiungibili da nessun branch. Nel qual caso è possibile creare un nuovo branch per la modifica in corso e settarlo come branch corrente, tramite il comando git checkout -b new_branch_name.
+
+
+
