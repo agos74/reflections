@@ -23,5 +23,12 @@ How do the diagrams help you visualize the branch structure?
 
 I diagrammi consentono di capire quali sono i commit non raggiungibili da nessun branch. Nel qual caso è possibile creare un nuovo branch per la modifica in corso e settarlo come branch corrente, tramite il comando git checkout -b new_branch_name.
 
+26. Reflect: Merging Two Branches
+What is the result of merging two branches together? Why do we represent it in the diagram the way we do?
+
+Unendo due branches insieme si fondono più modifiche a due branches diverse in una sola. Dopo la fusione è possibile eventualmente poi cancellare il branch che non ci serve più (alla fine è solo una label) con il comando git branch -d nome_branch_da_cancellare. La rappresentazione con diagramma aiuta a capire i commit cono sono collegati ai parents.
+
+
+
 
 
