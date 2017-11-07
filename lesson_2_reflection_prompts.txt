@@ -28,6 +28,11 @@ What is the result of merging two branches together? Why do we represent it in t
 
 Unendo due branches insieme si fondono più modifiche a due branches diverse in una sola. Dopo la fusione è possibile eventualmente poi cancellare il branch che non ci serve più (alla fine è solo una label) con il comando git branch -d nome_branch_da_cancellare. La rappresentazione con diagramma aiuta a capire i commit cono sono collegati ai parents.
 
+33. Reflect: Automatic vs. Manual Merging
+What are the pros and cons of Git’s automatic merging vs. always doing merges manually?
+
+La fusione automatica è molto comoda quando non ci sono conflitti fra due versioni dello stesso file. Nel caso due persone hanno modificato le stesse linee o funzioni di un file, allora git non può farlo in modo automatico ma c'è bisogno dell'intervento manuale per risolvere il conflitto. 
+
 
 
 
