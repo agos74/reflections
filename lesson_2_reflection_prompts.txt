@@ -12,3 +12,8 @@ La staging area contiene i files che necessitano di un commit, è un'area di par
 How can you use the staging area to make sure you have one commit per logical change?
 
 Bisogna aggiungere all'area di staging un file alla volta e poi tramite un unico comando di commit vengono aggiornati nel repository tutti i files relativi ad uno stesso intervento logico. 
+
+16. Reflect: When to Use Branches
+What are some situations when branches would be helpful in keeping your history organized? How would branches help?
+
+Poter creare branches in un programma aiuta in diverse situazioni. Ad esempio se si vuole fare una modifica importante al programma, come ad esempio introdurre una nuova funzione che richiede del tempo per essere realizzata. Nel frattempo, se viene segnalato un bug al programma, rimane possibile correggerlo nel branch master, e continuare tranquillamente le nuove implementazioni nel branch secondario. 
