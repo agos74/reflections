@@ -1,39 +1,34 @@
 5. Reflect: Initializing a Repository
 What happens when you initialize a repository? Why do you need to do it?
 
-Quando si inizializza un repository viene creata la cartella nascosta .git, visibile con il comando ls -a, che contiene i file e le cartelle per la gestione del repository. Non ci sono commit quando viene creato un repository.
+When you initialize a repository, you create the .git hidden folder, visible with the "ls -a" command, which contains files and folders for repository management. There are no commits when a repository is created.
 
 8. Reflect: Staging Area
 How is the staging area different from the working directory and the repository? What value do you think it offers?
 
-La staging area contiene i files che necessitano di un commit, è un'area di parcheggio temporaneo dei files tra working directory e repository. Tramite il comando git add è possibile parcheggiare in staging area i files, uno per volta, per poi fare archiviarli tutti con un solo commit nel repository. E' utile in quanto permette di organizzare meglio i commit. Tramite il comando git status è possibile verificare quali files sono presenti nella staging area. 
+The staging area contains the files that we need to commit, it is a temporary parking area of the files between the working directory and the repository. You can use the "git add" command to park the files in the staging area, one at a time, and then archive them all with one commit in the repository. It is useful because it allows you to better organize the commit. With the "git status" command you can check which files are present in the staging area.
 
 13. Reflect: Commit Size
 How can you use the staging area to make sure you have one commit per logical change?
 
-Bisogna aggiungere all'area di staging un file alla volta e poi tramite un unico comando di commit vengono aggiornati nel repository tutti i files relativi ad uno stesso intervento logico. 
+You have to add the files to the staging area one at a time, and then through a single commit command, the files in the repository of all the same logical files are updated.
 
 16. Reflect: When to Use Branches
 What are some situations when branches would be helpful in keeping your history organized? How would branches help?
 
-Poter creare branches in un programma aiuta in diverse situazioni. Ad esempio se si vuole fare una modifica importante al programma, come ad esempio introdurre una nuova funzione che richiede del tempo per essere realizzata. Nel frattempo, se viene segnalato un bug al programma, rimane possibile correggerlo nel branch master, e continuare tranquillamente le nuove implementazioni nel branch secondario. 
+Creating branches in a program helps in different situations. For example, if you want to make a major change to the program, such as introducing a new feature that takes much time to accomplish. Meanwhile, if a bug is reported to the program, it remains possible to correct it in the master branch, and keep quiet about new deployments in the secondary branch.
 
 21. Reflect: Visualizing with Diagrams
 How do the diagrams help you visualize the branch structure?
 
-I diagrammi consentono di capire quali sono i commit non raggiungibili da nessun branch. Nel qual caso è possibile creare un nuovo branch per la modifica in corso e settarlo come branch corrente, tramite il comando git checkout -b new_branch_name.
+The diagrams let you know what commits cannot be reached by any branch. In this case, you can create a new branch for the current editing and set it as a current branch, using the "git checkout -b new_branch_name" command.
 
 26. Reflect: Merging Two Branches
 What is the result of merging two branches together? Why do we represent it in the diagram the way we do?
 
-Unendo due branches insieme si fondono più modifiche a due branches diverse in una sola. Dopo la fusione è possibile eventualmente poi cancellare il branch che non ci serve più (alla fine è solo una label) con il comando git branch -d nome_branch_da_cancellare. La rappresentazione con diagramma aiuta a capire i commit cono sono collegati ai parents.
+Joining two branches together merges multiple changes to two different branches in one. After merging, you can delete the branch that we no longer need (in the end it's just a label) with the "git branch -d branch_to_delete" command. Diagramimng helps to understand how commits are related to parents.
 
 33. Reflect: Automatic vs. Manual Merging
 What are the pros and cons of Git’s automatic merging vs. always doing merges manually?
 
-La fusione automatica è molto comoda quando non ci sono conflitti fra due versioni dello stesso file. Nel caso due persone hanno modificato le stesse linee o funzioni di un file, allora git non può farlo in modo automatico ma c'è bisogno dell'intervento manuale per risolvere il conflitto. 
-
-
-
-
-
+Automatic merging is very convenient when there are no conflicts between two versions of the same file. If two people have modified the same lines or functions as a file, then git cannot do it automatically, but manual intervention is needed to resolve the conflict.
