@@ -1,5 +1,10 @@
- 7 Reflect: Using a remote repository
- When would you want to use a remote repository rather than keeping all your work local?
+7. Reflect: Using a remote repository
+When would you want to use a remote repository rather than keeping all your work local?
+
+It's useful to use a remote repository for open projects to share with others, perhaps allowing them to contribute to the project itself.
  
- It's useful to use a remote repository for open projects to share with others, perhaps allowing them to contribute to the project itself.
- 
+10. Reflect: Manual vs. automatic pull
+Why might you want to always pull changes manually rather than having Git automatically stay up-to-date with your remote repository?
+
+I thinks it's better to have a manual control, mainly in case of conflicts with changes to the same files.
+
