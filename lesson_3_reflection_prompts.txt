@@ -8,3 +8,7 @@ Why might you want to always pull changes manually rather than having Git automa
 
 I thinks it's better to have a manual control, mainly in case of conflicts with changes to the same files.
 
+14 Reflect: Forks, Clones, and Branches
+Describe the differences between forks, clones, and branches. When would you use one instead of another?
+
+Forks e clones are a copy of a remote or local repository. Branches are used to develop features that are isolated from each other. Fork is the remote copy of a repository of another user on GitHub, it's useful when we want to modify a repository of another user. Clone is a local copy of a repository, from another computer or from GitHub.   
