@@ -8,17 +8,22 @@ Why might you want to always pull changes manually rather than having Git automa
 
 I thinks it's better to have a manual control, mainly in case of conflicts with changes to the same files.
 
-14 Reflect: Forks, Clones, and Branches
+14. Reflect: Forks, Clones, and Branches
 Describe the differences between forks, clones, and branches. When would you use one instead of another?
 
 Forks e clones are a copy of a remote or local repository. Branches are used to develop features that are isolated from each other. Fork is the remote copy of a repository of another user on GitHub, it's useful when we want to modify a repository of another user. Clone is a local copy of a repository, from another computer or from GitHub.   
 
-22 Reflect: Local copies of remote branches
+22. Reflect: Local copies of remote branches
 What is the benefit of having a copy of the last known state of the remote stored locally?
 
 The advantage is that if you go to a place where you're offline, you can sync your local copy with the remote copy before you leave, so you can work on the updated project and then when you return online you can sync it with remote copy.
 
-25 Reflect: Collaboration using Git and GitHub
+25. Reflect: Collaboration using Git and GitHub
 How would you collaborate without using Git or GitHub? What would be easier, and what would be harder?
 
 Collaboration without using Git or GitHub would be more complex, it should be done with more direct communication, with a greater loss of time and with a higher chance of errors in the code, especially in case of modifications to the same files.
+
+31. Reflect: When to use a separate branch
+When would you want to make changes in a separate branch rather than directly in master? What benefits does each approach have?
+
+Create a separate branch it's useful when you want make important changes that may have an impact on the structure of the program, or in all those cases where you want to make changes without risking breaking the master code. In the case of bug fixes or small changes you do not need to create a new branch.
